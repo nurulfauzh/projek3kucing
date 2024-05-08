@@ -29,7 +29,7 @@ class LastScanWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             const Text(
-              'Yuk! Kenali lebih dini gejala scabies pada kulit anda.',
+              'Yuk! Kenali gejala kucing anda!',
               style: TextStyle(
                 fontSize: 16,
                 color: AppColors.white,

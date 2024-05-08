@@ -22,7 +22,7 @@ class SkinProblemWidget extends StatelessWidget {
         children: [
           const Flexible(
             child: Text(
-              'Apakah anda memiliki masalah kulit?',
+              'Apakah kucing anda memiliki masalah kulit?',
               style: TextStyle(
                 fontSize: 14,
                 color: AppColors.blackColor,
