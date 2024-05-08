@@ -37,7 +37,7 @@ class AuthScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Insert App',
+                    'Selamat datang',
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.w900,
@@ -48,7 +48,7 @@ class AuthScreen extends StatelessWidget {
                     height: 22.0,
                   ),
                   const Text(
-                    'Aplikasi Pendeteksi Dini Penyakit Kulit Scabies',
+                    'Aplikasi Pendeteksi Penyakit Kulit Kucing',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: AppColors.brandColor,
@@ -84,7 +84,7 @@ class AuthScreen extends StatelessWidget {
                             width: 8.0,
                           ),
                           Text(
-                            "Mulai Sekarang",
+                            " Ayo Kita mulai",
                             style: TextStyle(
                               fontSize: AppFontSize.actionMedium,
                               fontWeight: AppFontWeight.actionSemiBold,
