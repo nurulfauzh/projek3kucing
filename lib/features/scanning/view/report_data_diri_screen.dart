@@ -32,7 +32,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
         title: const Text(
           'Tes Scabies',
           style: TextStyle(
-            color: AppColors.white,
+            color: Color.fromARGB(255, 166, 125, 182),
             fontSize: AppFontSize.bodyLarge,
           ),
         ),

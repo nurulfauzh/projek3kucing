@@ -15,15 +15,15 @@ class HeadingWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Selamat Datang',
+                'Selamat Datang cat lovers',
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.normal,
-                  color: AppColors.graySecondColor,
+                  color: Color.fromARGB(255, 158, 116, 188),
                 ),
               ),
               Text(
-                'User!',
+                'SAYANGI KUCING ANDA!',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w900,
@@ -41,7 +41,6 @@ class HeadingWidget extends StatelessWidget {
             width: 60.0,
             height: 60.0,
             color: AppColors.primary500,
-            child: Image.asset('assets/images/profile.jpg'),
           ),
         ),
       ],
