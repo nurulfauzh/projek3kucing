@@ -4,7 +4,7 @@ import 'package:mobileapp_scabies/core/state/finite_state.dart';
 import 'package:mobileapp_scabies/features/history/view/history_screen.dart';
 import 'package:mobileapp_scabies/features/home/view/home_screen.dart';
 import 'package:mobileapp_scabies/features/news/view/news_screen.dart';
-import 'package:mobileapp_scabies/features/profile/view/profile_screen.dart';
+
 
 class DashboardProvider with ChangeNotifier {
   int selectedIndex = 0;
@@ -18,7 +18,6 @@ class DashboardProvider with ChangeNotifier {
     IconlyBold.activity,
     Icons.fiber_dvr,
     IconlyBold.paper,
-    IconlyBold.profile,
   ];
 
   final List notActiveIcon = [
@@ -26,7 +25,6 @@ class DashboardProvider with ChangeNotifier {
     IconlyLight.activity,
     Icons.fiber_dvr,
     IconlyLight.paper,
-    IconlyLight.profile,
   ];
 
   // Pages untuk icon icon diatas
@@ -35,7 +33,6 @@ class DashboardProvider with ChangeNotifier {
     const NewsScreen(),
     const HomeScreen(),
     const HistoryScreen(),
-    const ProfileScreen(),
   ];
 
   // Set Pages yang dipilih
