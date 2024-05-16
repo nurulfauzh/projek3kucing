@@ -4,12 +4,12 @@ class AppColors {
   AppColors._();
 
   // Shimmer Base Color
-  static const Color baseShimmerColor = Color(0xFFF1EFEF);
-  static const Color highlightShimmerColor = Color(0xFFE7E5E5);
+  static const Color baseShimmerColor = Color.fromRGBO(137, 97, 148, 1);
+  static const Color highlightShimmerColor = Color.fromARGB(136, 151, 56, 145);
 
   // Primary Color
-  static const Color primary50 = Color(0xffEEF0FD);
-  static const Color primary100 = Color(0xffDEE1FD);
+  static const Color primary50 = Color.fromARGB(255, 127, 77, 155);
+  static const Color primary100 = Color.fromARGB(255, 127, 77, 155);
   static const Color primary200 = Color(0xffBCC4FB);
   static const Color primary300 = Color(0xffDEE1FD);
   static const Color primary400 = Color(0xff7E8CF7);

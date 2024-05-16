@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:mobileapp_scabies/core/constants/colors.dart';
@@ -18,15 +19,10 @@ class AuthScreen extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.5,
             alignment: Alignment.center,
             decoration: const BoxDecoration(
-              color: AppColors.brandColor,
-              borderRadius: BorderRadius.vertical(
-                bottom: Radius.elliptical(500, 200),
-              ),
+              color: Color.fromRGBO(158, 172, 252, 1),
               image: DecorationImage(
-                image: AssetImage(
-                  "assets/images/auth_image_2.png",
-                ),
-                fit: BoxFit.cover,
+                image: AssetImage(""),
+                fit: BoxFit.fill,
               ),
             ),
           ),
@@ -40,6 +36,7 @@ class AuthScreen extends StatelessWidget {
                     'Selamat datang',
                     style: TextStyle(
                       fontSize: 32,
+                      fontStyle: FontStyle.italic,
                       fontWeight: FontWeight.w900,
                       color: AppColors.brandColor,
                     ),
@@ -51,6 +48,7 @@ class AuthScreen extends StatelessWidget {
                     'Aplikasi Pendeteksi Penyakit Kulit Kucing',
                     textAlign: TextAlign.center,
                     style: TextStyle(
+                      fontStyle: FontStyle.italic,
                       color: AppColors.brandColor,
                     ),
                   ),

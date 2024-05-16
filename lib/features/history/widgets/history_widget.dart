@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mobileapp_scabies/core/constants/colors.dart';
 import 'package:mobileapp_scabies/features/history/provider/history_provider.dart';
 import 'package:mobileapp_scabies/features/history/widgets/item_widget/history_item_widget.dart';
 import 'package:provider/provider.dart';
@@ -22,7 +21,7 @@ class HistoryWidget extends StatelessWidget {
                       horizontal: 20,
                     ),
                     decoration: BoxDecoration(
-                      color: AppColors.white,
+                      color: Color.fromRGBO(144, 97, 156, 1),
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
@@ -36,7 +35,7 @@ class HistoryWidget extends StatelessWidget {
                     ),
                     child: const Center(
                       child: Text(
-                        'Riwayat kosong.',
+                        'jamur,kehilangan bulu',
                       ),
                     ),
                   )

@@ -7,7 +7,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+<<<<<<< HEAD
 
+=======
+>>>>>>> e92409ed57e7d7732f4b858be005926e98510989
 import 'package:mobileapp_scabies/my_app.dart';
 
 void main() {
