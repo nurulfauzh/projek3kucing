@@ -24,7 +24,7 @@ class OldHistoryWidget extends StatelessWidget {
                       horizontal: 20,
                     ),
                     decoration: BoxDecoration(
-                      color: AppColors.white,
+                      color: Color.fromRGBO(198, 120, 202, 1),
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
@@ -38,7 +38,7 @@ class OldHistoryWidget extends StatelessWidget {
                     ),
                     child: const Center(
                       child: Text(
-                        'Riwayat kosong.',
+                        'jamur,kehilangan bulu',
                       ),
                     ),
                   )

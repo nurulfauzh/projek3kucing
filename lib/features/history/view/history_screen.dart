@@ -19,7 +19,7 @@ class HistoryScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Riwayat',
+                  'Deskripsi',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
