@@ -13,7 +13,7 @@ class NewsDetailScreen extends StatelessWidget {
             Stack(
               children: [
                 Image.asset(
-                  'assets/images/scabies_test.png',
+                  'assets/images/scabies.jpg',
                   height: MediaQuery.of(context).size.height * 0.4,
                   width: MediaQuery.of(context).size.width,
                   fit: BoxFit.cover,
@@ -52,7 +52,7 @@ class NewsDetailScreen extends StatelessWidget {
                     child: IconButton(
                       onPressed: () {
                         _showFullScreenImage(
-                            context, 'assets/images/scabies_test.png');
+                            context, 'assets/images/jamur.jpg');
                       },
                       icon: const Icon(
                         Icons.zoom_in,
@@ -81,7 +81,7 @@ class NewsDetailScreen extends StatelessWidget {
                     height: 12,
                   ),
                   Text(
-                    'Tips merawat kulit sensitif dari jangkauan sinar matahari.',
+                    'Penyakit scabies pada kucing',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -93,7 +93,7 @@ class NewsDetailScreen extends StatelessWidget {
                     height: 12,
                   ),
                   Text(
-                    'Kulit sensitif membutuhkan perawatan ekstra untuk melindunginya dari dampak negatif sinar matahari. Salah satu langkah yang penting adalah menggunakan tabir surya dengan SPF tinggi setiap kali terpapar sinar matahari. Tabir surya membantu melindungi kulit dari paparan sinar UV yang dapat menyebabkan iritasi, kemerahan, dan bahkan kerusakan kulit jangka panjang. Pilihlah tabir surya yang dirancang khusus untuk kulit sensitif dan hindari penggunaan produk yang mengandung bahan kimia keras yang dapat memicu reaksi alergi. \n\nSelain menggunakan tabir surya, penting juga untuk mengatur waktu berjemur. Kulit sensitif cenderung lebih rentan terhadap efek negatif sinar matahari, karenanya sebaiknya hindari berjemur terlalu lama, terutama pada pukul 10 pagi hingga 4 sore ketika matahari berada pada posisi paling tinggi. Pilihlah waktu berjemur di pagi hari atau sore hari yang lebih aman untuk kulit sensitif Anda.\n\nPemilihan produk perawatan kulit juga memegang peranan penting dalam menjaga kesehatan kulit sensitif. Pilihlah produk yang bebas pewangi dan hypoallergenic untuk menghindari potensi iritasi. Selalu baca kandungan produk sebelum membeli dan pastikan tidak mengandung bahan-bahan yang dapat memicu reaksi alergi pada kulit sensitif Anda.\n\nRutin membersihkan wajah juga merupakan langkah penting dalam merawat kulit sensitif. Gunakan pembersih wajah yang lembut dan dirancang khusus untuk kulit sensitif. Hindari penggunaan sabun atau pembersih yang mengandung bahan kimia keras yang dapat mengiritasi kulit. Membersihkan wajah dengan lembut membantu menjaga kelembapan kulit dan menghindari timbulnya kemerahan atau iritasi.\n\nTerakhir, perhatikan kondisi kulit sensitif Anda secara keseluruhan. Jika Anda mengalami iritasi, kemerahan, atau masalah kulit lainnya, segera konsultasikan dengan dokter kulit. Mereka dapat memberikan saran dan perawatan yang lebih spesifik sesuai dengan kebutuhan kulit sensitif Anda. Dengan perhatian ekstra dan langkah-langkah pencegahan yang tepat, Anda dapat menjaga kulit sensitif Anda tetap sehat dan terlindungi dari sinar matahari yang berbahaya.',
+                    'Infeksi kulit oleh tungau Sarcoptes scabiei, menyebabkan gatal-gatal parah, rambut rontok, dan kulit kemerahan. Sangat menular ke hewan lain dan manusia.',
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,

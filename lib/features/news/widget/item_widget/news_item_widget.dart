@@ -26,7 +26,7 @@ class NewsItemWidget extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(14),
               child: Image.asset(
-                'assets/images/scabies_test.png',
+                'assets/images/scabies.jpg',
                 width: 150,
                 height: 100,
                 fit: BoxFit.cover,
@@ -52,7 +52,7 @@ class NewsItemWidget extends StatelessWidget {
                     height: 2,
                   ),
                   Text(
-                    'Tips merawat kulit sensitif dari jangkauan sinar matahari.',
+                    'Penyakit scabies pada kucing',
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
@@ -64,7 +64,7 @@ class NewsItemWidget extends StatelessWidget {
                     height: 2,
                   ),
                   Text(
-                    'Ada banyak cara untuk merawat kulit dari paparan sinar matahari, salah satunya dengan menggunakan sunscreen. Sudah kah kamu menggunakan sunscreen untuk kebutuhan sehari-hari?',
+                    'Infeksi kulit oleh tungau Sarcoptes scabiei, menyebabkan gatal-gatal parah, rambut rontok, dan kulit kemerahan. Sangat menular ke hewan lain dan manusia.',
                     style: TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.w500,

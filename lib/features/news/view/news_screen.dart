@@ -16,7 +16,8 @@ class _NewsScreenState extends State<NewsScreen> {
   int _currentIndex = 0;
 
   final List<String> imgList = [
-    'assets/images/scabies_test.png',
+    'assets/images/scabies.jpg',
+    'assets/images/jamur.jpg'
     'assets/images/insert_app_logo.png',
     'assets/images/doctor_test.png',
   ];
@@ -86,7 +87,7 @@ class _NewsScreenState extends State<NewsScreen> {
                   right: 16,
                 ),
                 child: Text(
-                  'Berita',
+                  'Deskripsi',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
