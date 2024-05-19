@@ -18,7 +18,7 @@ class _NewsScreenState extends State<NewsScreen> {
   final List<String> imgList = [
     'assets/images/scabies.jpg',
     'assets/images/jamur.jpg'
-    'assets/images/insert_app_logo.png',
+        'assets/images/auth_image_2.png',
     'assets/images/doctor_test.png',
   ];
 
