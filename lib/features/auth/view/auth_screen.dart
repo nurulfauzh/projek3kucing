@@ -36,7 +36,7 @@ class AuthScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Selamat datang',
+                    'Selamat Datang',
                     style: TextStyle(
                       fontSize: 32,
                       fontStyle: FontStyle.italic,

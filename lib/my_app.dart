@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Scabies App',
+        title: 'Cat Diagnos App',
         home: const SplashScreen(),
         theme: ThemeData().copyWith(
           colorScheme: ColorScheme.fromSeed(seedColor: AppColors.brandColor),
