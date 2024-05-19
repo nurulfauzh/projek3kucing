@@ -20,6 +20,8 @@ class AuthScreen extends StatelessWidget {
             alignment: Alignment.center,
             decoration: const BoxDecoration(
               color: Color.fromRGBO(158, 172, 252, 1),
+              borderRadius:
+                  BorderRadius.vertical(bottom: Radius.elliptical(30, 20)),
               image: DecorationImage(
                 image: AssetImage("assets/images/auth_image_2.png"),
                 fit: BoxFit.scaleDown,
@@ -82,7 +84,7 @@ class AuthScreen extends StatelessWidget {
                             width: 8.0,
                           ),
                           Text(
-                            " Ayo Kita mulai",
+                            " Ayo mulai",
                             style: TextStyle(
                               fontSize: AppFontSize.actionMedium,
                               fontWeight: AppFontWeight.actionSemiBold,

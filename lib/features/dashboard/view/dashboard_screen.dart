@@ -19,7 +19,7 @@ class DashboardScreen extends StatelessWidget {
               ? const SizedBox.shrink()
               : FloatingActionButton(
                   shape: const CircleBorder(),
-                  backgroundColor: AppColors.brandColor,
+                  backgroundColor: Color.fromRGBO(65, 70, 221, 1),
                   onPressed: () async {
                     await Navigator.push(
                       context,

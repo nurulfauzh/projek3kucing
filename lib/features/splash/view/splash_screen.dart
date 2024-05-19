@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Center(
             child: Image.asset(
-              'assets/images/insert_app_logo.png',
+              'assets/images/auth_image_2.png',
               width: MediaQuery.of(context).size.width * 0.8,
             ),
           ),
