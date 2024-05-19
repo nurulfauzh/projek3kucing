@@ -32,17 +32,16 @@ class AuthScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 60.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Selamat datang',
-                style: GoogleFonts.mochiyPopOne(
-                fontSize: 32,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.w900,
-                color: AppColors.brandColor,
-          ),
-          ),
-          ],
+                children: [
+                  const Text(
+                    'Selamat datang',
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w900,
+                      color: AppColors.brandColor,
+                    ),
+                  ),
                   const SizedBox(
                     height: 22.0,
                   ),
@@ -50,7 +49,6 @@ class AuthScreen extends StatelessWidget {
                     'Aplikasi Pendeteksi Penyakit Kulit Kucing',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontStyle: FontStyle.italic,
                       color: AppColors.brandColor,
                     ),
                   ),
