@@ -16,15 +16,9 @@ class _NewsScreenState extends State<NewsScreen> {
   int _currentIndex = 0;
 
   final List<String> imgList = [
-    'assets/images/scabies.jpg',
-<<<<<<< HEAD
-    'assets/images/jamur.jpg'
-        'assets/images/auth_image_2.png',
-    'assets/images/doctor_test.png',
-=======
-    'assets/images/jamur.jpg',
+    'assets/images/scabies_test.png',
     'assets/images/auth_image_2.png',
->>>>>>> 5cacb011d7dfdb35f022dc5ee3ef4acc9aff329f
+    'assets/images/doctor_test.png',
   ];
 
   List items = [
@@ -92,7 +86,7 @@ class _NewsScreenState extends State<NewsScreen> {
                   right: 16,
                 ),
                 child: Text(
-                  'Deskripsi',
+                  'Berita',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -143,7 +137,7 @@ class _NewsScreenState extends State<NewsScreen> {
                   right: 16,
                 ),
                 child: Text(
-                  'Deskripsi Penyakit Kulit Kucing',
+                  'Berita Terkini',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
