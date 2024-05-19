@@ -21,8 +21,9 @@ class AuthScreen extends StatelessWidget {
             decoration: const BoxDecoration(
               color: Color.fromRGBO(158, 172, 252, 1),
               image: DecorationImage(
-                image: AssetImage(""),
-                fit: BoxFit.fill,
+                image: AssetImage("assets/images/auth_image_2.png"),
+                fit: BoxFit.scaleDown,
+                scale: 0.5,
               ),
             ),
           ),
@@ -31,16 +32,17 @@ class AuthScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 60.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text(
-                    'Selamat datang',
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w900,
-                      color: AppColors.brandColor,
-                    ),
-                  ),
+          children: [
+            Text(
+              'Selamat datang',
+                style: GoogleFonts.mochiyPopOne(
+                fontSize: 32,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w900,
+                color: AppColors.brandColor,
+          ),
+          ),
+          ],
                   const SizedBox(
                     height: 22.0,
                   ),
