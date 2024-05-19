@@ -28,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
                         width: 64,
                         height: 64,
                         color: AppColors.primary500,
-                        child: Image.asset('assets/images/profile.jpg'),
+                        child: Image.asset('assets/images/profile.png'),
                       ),
                     ),
                     const SizedBox(
