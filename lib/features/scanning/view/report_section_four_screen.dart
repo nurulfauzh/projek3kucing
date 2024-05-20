@@ -22,9 +22,9 @@ class _ReportSectionFourScreenState extends State<ReportSectionFourScreen> {
       appBar: AppBar(
         centerTitle: false,
         title: const Text(
-          'Tes Scabies',
+          'Ayo tes kucingmu!',
           style: TextStyle(
-            color: AppColors.white,
+            color: Color.fromARGB(255, 0, 0, 0),
             fontSize: AppFontSize.bodyLarge,
           ),
         ),

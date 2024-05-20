@@ -30,9 +30,9 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
       appBar: AppBar(
         centerTitle: false,
         title: const Text(
-          'Tes Scabies',
+          'Ayo tes kucingmu!',
           style: TextStyle(
-            color: Color.fromARGB(255, 166, 125, 182),
+            color: Color.fromARGB(255, 0, 0, 0),
             fontSize: AppFontSize.bodyLarge,
           ),
         ),
@@ -57,7 +57,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
             width: 16,
           ),
         ],
-        backgroundColor: AppColors.brandColor,
+        backgroundColor: Color.fromRGBO(158, 172, 252, 1),
         shadowColor: AppColors.black.withOpacity(0.2),
       ),
       body: Consumer<ScannerProvider>(
@@ -221,7 +221,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                       ),
                     ),
                     backgroundColor: const MaterialStatePropertyAll(
-                      AppColors.brandColor,
+                      Color.fromRGBO(158, 172, 252, 1),
                     ),
                   ),
                   child: const Text(
@@ -229,7 +229,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                     style: TextStyle(
                       fontSize: AppFontSize.bodyMedium,
                       fontWeight: FontWeight.normal,
-                      color: AppColors.white,
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                   ),
                 ),

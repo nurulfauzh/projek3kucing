@@ -5,7 +5,6 @@ import 'package:mobileapp_scabies/features/history/view/history_screen.dart';
 import 'package:mobileapp_scabies/features/home/view/home_screen.dart';
 import 'package:mobileapp_scabies/features/news/view/news_screen.dart';
 
-
 class DashboardProvider with ChangeNotifier {
   int selectedIndex = 0;
 
@@ -16,7 +15,6 @@ class DashboardProvider with ChangeNotifier {
   final List icon = [
     IconlyBold.home,
     IconlyBold.activity,
-    Icons.fiber_dvr,
     IconlyBold.paper,
   ];
 

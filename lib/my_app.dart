@@ -31,22 +31,23 @@ class MyApp extends StatelessWidget {
         home: const SplashScreen(),
         theme: ThemeData().copyWith(
           colorScheme: ColorScheme.fromSeed(seedColor: AppColors.brandColor),
-          scaffoldBackgroundColor: Colors.white,
+          scaffoldBackgroundColor: Color.fromRGBO(255, 255, 255, 1),
           textTheme: GoogleFonts.poppinsTextTheme(
             Theme.of(context).textTheme,
           ).apply(
             bodyColor: Colors.black,
           ),
           appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(158, 172, 252, 1),
             shadowColor: Colors.transparent,
-            surfaceTintColor: Colors.white,
+            surfaceTintColor: Color.fromRGBO(158, 172, 252, 1),
             iconTheme: IconThemeData(
               color: Colors.white,
             ),
           ),
           bottomAppBarTheme: const BottomAppBarTheme(
-            color: Colors.white,
+            color:
+                Color.fromRGBO(229, 204, 255, 1), // Ubah warna sesuai kebutuhan
             shadowColor: Colors.black,
             elevation: 20,
             surfaceTintColor: Colors.white,
