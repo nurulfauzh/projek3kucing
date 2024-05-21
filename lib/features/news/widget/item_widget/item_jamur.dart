@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:mobileapp_scabies/core/constants/colors.dart';
 import 'package:mobileapp_scabies/features/news/view/news_detail_screen.dart';
 
-class NewsItemWidget extends StatelessWidget {
-  const NewsItemWidget({super.key});
+class ItemJamur extends StatelessWidget {
+  const ItemJamur({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class NewsItemWidget extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(14),
               child: Image.asset(
-                'assets/images/scabies.jpg',
+                'assets/images/jamur.jpg',
                 width: 150,
                 height: 100,
                 fit: BoxFit.cover,
@@ -52,7 +52,7 @@ class NewsItemWidget extends StatelessWidget {
                     height: 2,
                   ),
                   Text(
-                    'Penyakit scabies pada kucing',
+                    'Penyakit jamur pada kucing',
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
@@ -64,7 +64,7 @@ class NewsItemWidget extends StatelessWidget {
                     height: 2,
                   ),
                   Text(
-                    'Infeksi kulit oleh tungau Sarcoptes scabiei, menyebabkan gatal-gatal parah, rambut rontok, dan kulit kemerahan. Sangat menular ke hewan lain dan manusia.',
+                    'Infeksi kulit oleh jamur, biasanya Microsporum canis, menyebabkan bercak melingkar yang gatal, merah, dan bersisik, serta kerontokan rambut. Juga menular ke hewan lain dan manusia.',
                     style: TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.w500,
@@ -91,4 +91,3 @@ class NewsItemWidget extends StatelessWidget {
     );
   }
 }
- 

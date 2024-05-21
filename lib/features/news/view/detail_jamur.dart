@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobileapp_scabies/core/constants/colors.dart';
 
-class NewsDetailScreen extends StatelessWidget {
-  const NewsDetailScreen({super.key});
+class DetailJamur extends StatelessWidget {
+  const DetailJamur({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class NewsDetailScreen extends StatelessWidget {
             Stack(
               children: [
                 Image.asset(
-                  'assets/images/scabies.jpg',
+                  'assets/images/jamur.jpg',
                   height: MediaQuery.of(context).size.height * 0.4,
                   width: MediaQuery.of(context).size.width,
                   fit: BoxFit.cover,
@@ -52,7 +52,7 @@ class NewsDetailScreen extends StatelessWidget {
                     child: IconButton(
                       onPressed: () {
                         _showFullScreenImage(
-                            context, 'assets/images/scabies.jpg');
+                            context, 'assets/images/jamur.jpg');
                       },
                       icon: const Icon(
                         Icons.zoom_in,
@@ -81,7 +81,7 @@ class NewsDetailScreen extends StatelessWidget {
                     height: 12,
                   ),
                   Text(
-                    'Penyakit scabies pada kucing',
+                    'Penyakit jamur pada kucing',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -93,7 +93,7 @@ class NewsDetailScreen extends StatelessWidget {
                     height: 12,
                   ),
                   Text(
-                    'Scabies, juga dikenal sebagai kudis, adalah infeksi kulit yang disebabkan oleh tungau kecil bernama Sarcoptes scabiei. Tungau ini menggali ke dalam kulit kucing, menyebabkan rasa gatal yang intens dan iritasi. Gejala termasuk gatal-gatal yang parah, rambut rontok, kulit kemerahan, dan kerak. Scabies sangat menular dan bisa menyebar ke hewan lain dan manusia.',
+                    'Infeksi jamur pada kucing umumnya disebabkan oleh dermatofita, seperti Microsporum canis, yang menyebabkan penyakit kulit yang disebut dermatofitosis atau ringworm (kurap). Gejala infeksi jamur termasuk bercak-bercak melingkar pada kulit yang gatal, merah, dan bersisik, serta kerontokan rambut di area yang terinfeksi. Penyakit ini juga menular ke hewan lain dan manusia.',
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,

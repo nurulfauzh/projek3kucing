@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobileapp_scabies/core/constants/colors.dart';
 import 'package:mobileapp_scabies/features/news/view/news_detail_screen.dart';
+import 'package:mobileapp_scabies/features/news/widget/item_widget/item_jamur.dart';
 import 'package:mobileapp_scabies/features/news/widget/item_widget/news_item_widget.dart';
 
 class NewsScreen extends StatefulWidget {
@@ -23,6 +24,7 @@ class _NewsScreenState extends State<NewsScreen> {
 
   List items = [
     const NewsItemWidget(),
+    const ItemJamur(),
   ];
 
   @override
@@ -80,7 +82,7 @@ class _NewsScreenState extends State<NewsScreen> {
                   right: 16,
                 ),
                 child: Text(
-                  'Berita',
+                  'Deskripsi',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -131,7 +133,7 @@ class _NewsScreenState extends State<NewsScreen> {
                   right: 16,
                 ),
                 child: Text(
-                  'Berita Terkini',
+                  'Deskripsi Penyakit Kucing',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
