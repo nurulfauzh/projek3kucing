@@ -16,18 +16,12 @@ class _NewsScreenState extends State<NewsScreen> {
   int _currentIndex = 0;
 
   final List<String> imgList = [
-    'assets/images/scabies_test.png',
+    'assets/images/scabies.jpg',
     'assets/images/auth_image_2.png',
-    'assets/images/doctor_test.png',
+    'assets/images/jamur.jpg',
   ];
 
   List items = [
-    const NewsItemWidget(),
-    const NewsItemWidget(),
-    const NewsItemWidget(),
-    const NewsItemWidget(),
-    const NewsItemWidget(),
-    const NewsItemWidget(),
     const NewsItemWidget(),
   ];
 
