@@ -15,14 +15,13 @@ class DashboardProvider with ChangeNotifier {
   final List icon = [
     IconlyBold.home,
     IconlyBold.activity,
-    IconlyBold.paper,
+   
   ];
 
   final List notActiveIcon = [
     IconlyLight.home,
     IconlyLight.activity,
-    Icons.fiber_dvr,
-    IconlyLight.paper,
+   
   ];
 
   // Pages untuk icon icon diatas
