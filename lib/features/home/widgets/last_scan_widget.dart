@@ -31,8 +31,8 @@ class LastScanWidget extends StatelessWidget {
             const Text(
               'WELCOME TO CAT DIAGNOS SCANNER',
               style: TextStyle(
-                fontSize: 16,
-                color: AppColors.white,
+                fontSize: 18,
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.left,
@@ -45,11 +45,11 @@ class LastScanWidget extends StatelessWidget {
                 Provider.of<DashboardProvider>(context, listen: false)
                     .setSelectedIndex(context, 1);
               },
-              child: const Text(
+             child: const Text(
                 'Baca lebih lanjut',
                 style: TextStyle(
                   fontSize: 14,
-                  color: AppColors.white,
+                  color: Color.fromARGB(255, 48, 79, 116),
                   fontWeight: FontWeight.normal,
                 ),
               ),
