@@ -73,7 +73,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                   height: 16,
                 ),
                 const Text(
-                  'Data Diri',
+                  'Data Pemilik',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AppFontSize.bodyMedium,
@@ -89,7 +89,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                   height: 8,
                 ),
                 const Text(
-                  'Nama Lengkap',
+                  'Nama Lengkap Pemilik',
                 ),
                 const SizedBox(
                   height: 8,
@@ -101,71 +101,71 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                   controller: scannerProvider.namaLengkapController,
                   enable: true,
                   maxLines: 1,
-                  hint: "Tambahkan nama lengkap anda",
+                  hint: "Tambahkan nama lengkap Pemilik",
                 ),
                 const SizedBox(
                   height: 16,
                 ),
-                const Text(
-                  'Jenis Kelamin',
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                DropdownButtonFormField<String>(
-                  value: scannerProvider.jenisKelamin,
-                  style: const TextStyle(
-                    fontSize: AppFontSize.bodySmall,
-                    color: AppColors.black,
-                  ),
-                  onChanged: (String? newValue) => setState(
-                      () => scannerProvider.jenisKelamin = newValue ?? ''),
-                  items: scannerProvider.listJenisKelamin
-                      .map<DropdownMenuItem<String>>(
-                          (String value) => DropdownMenuItem<String>(
-                                value: value,
-                                child: Text(value),
-                              ))
-                      .toList(),
-                  icon: const Icon(Icons.arrow_drop_down),
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: AppColors.neutral300),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    errorBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: AppColors.error500),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    errorStyle: const TextStyle(
-                      color: AppColors.error500,
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: AppColors.neutral300),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    contentPadding: const EdgeInsets.all(16),
-                    fillColor: AppColors.white,
-                    filled: true,
-                  ),
-                  validator: (value) =>
-                      value == null ? 'Field tidak boleh kosong.' : null,
-                  iconSize: 20,
-                  isExpanded: true,
-                  hint: const Text(
-                    'Pilih Jenis Kelamin',
-                    style: TextStyle(
-                      fontSize: AppFontSize.bodySmall,
-                      color: AppColors.neutral600,
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 16,
-                ),
+                // const Text(
+                //   'Jenis Kelamin',
+                // ),
+                // const SizedBox(
+                //   height: 8,
+                // ),
+                // DropdownButtonFormField<String>(
+                //   value: scannerProvider.jenisKelamin,
+                //   style: const TextStyle(
+                //     fontSize: AppFontSize.bodySmall,
+                //     color: AppColors.black,
+                //   ),
+                //   onChanged: (String? newValue) => setState(
+                //       () => scannerProvider.jenisKelamin = newValue ?? ''),
+                //   items: scannerProvider.listJenisKelamin
+                //       .map<DropdownMenuItem<String>>(
+                //           (String value) => DropdownMenuItem<String>(
+                //                 value: value,
+                //                 child: Text(value),
+                //               ))
+                //       .toList(),
+                //   icon: const Icon(Icons.arrow_drop_down),
+                //   decoration: InputDecoration(
+                //     border: OutlineInputBorder(
+                //       borderRadius: BorderRadius.circular(14),
+                //     ),
+                //     enabledBorder: OutlineInputBorder(
+                //       borderSide: const BorderSide(color: AppColors.neutral300),
+                //       borderRadius: BorderRadius.circular(14),
+                //     ),
+                //     errorBorder: OutlineInputBorder(
+                //       borderSide: const BorderSide(color: AppColors.error500),
+                //       borderRadius: BorderRadius.circular(14),
+                //     ),
+                //     errorStyle: const TextStyle(
+                //       color: AppColors.error500,
+                //     ),
+                //     focusedBorder: OutlineInputBorder(
+                //       borderSide: const BorderSide(color: AppColors.neutral300),
+                //       borderRadius: BorderRadius.circular(14),
+                //     ),
+                //     contentPadding: const EdgeInsets.all(16),
+                //     fillColor: AppColors.white,
+                //     filled: true,
+                //   ),
+                //   validator: (value) =>
+                //       value == null ? 'Field tidak boleh kosong.' : null,
+                //   iconSize: 20,
+                //   isExpanded: true,
+                //   hint: const Text(
+                //     'Pilih Jenis Kelamin Kucing',
+                //     style: TextStyle(
+                //       fontSize: AppFontSize.bodySmall,
+                //       color: AppColors.neutral600,
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 16,
+                // ),
                 const Text(
                   'No HP',
                 ),
@@ -180,7 +180,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                   keyboardType: TextInputType.number,
                   enable: true,
                   maxLines: 1,
-                  hint: "Tambahkan No Hp anda",
+                  hint: "Tambahkan No Hp Pemilik",
                 ),
                 const SizedBox(
                   height: 16,
@@ -198,7 +198,7 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                   controller: scannerProvider.alamatController,
                   enable: true,
                   maxLines: 4,
-                  hint: "Tambahkan alamat lengkap anda",
+                  hint: "Tambahkan alamat lengkap Pemilik",
                 ),
                 const SizedBox(
                   height: 16,

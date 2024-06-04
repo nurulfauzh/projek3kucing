@@ -1,10 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 import 'package:mobileapp_scabies/core/constants/colors.dart';
 import 'package:mobileapp_scabies/core/constants/font_size.dart';
+import 'package:mobileapp_scabies/core/widgets/custom_text_form_field.dart';
 import 'package:mobileapp_scabies/core/widgets/warning_widget.dart';
 import 'package:mobileapp_scabies/features/scanning/provider/scanner_provider.dart';
-import 'package:mobileapp_scabies/features/scanning/view/report_section_two_screen.dart';
+import 'package:mobileapp_scabies/features/scanning/widgets/camera_modal.dart';
 import 'package:provider/provider.dart';
 
 class ReportSectionOneScreen extends StatefulWidget {
@@ -61,478 +62,529 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
               const SizedBox(
                 height: 16,
               ),
-              const Text(
-                'Gatal Malam Hari',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: AppFontSize.bodyMedium,
-                ),
-              ),
-              const SizedBox(
-                height: 8,
-              ),
-              const Text(
-                'Jawab pertanyaan berikut sesuai dengan keadaan kulit anda saat ini.',
-                style: TextStyle(
-                  fontWeight: FontWeight.normal,
-                  fontSize: AppFontSize.caption,
-                  color: AppColors.neutral500,
-                ),
-              ),
-              const SizedBox(
-                height: 8,
-              ),
-              const Divider(
-                color: AppColors.neutral100,
-              ),
-              const SizedBox(
-                height: 8,
-              ),
+              // const Text(
+              //   'Gatal Malam Hari',
+              //   style: TextStyle(
+              //     fontWeight: FontWeight.bold,
+              //     fontSize: AppFontSize.bodyMedium,
+              //   ),
+              // ),
+              // const SizedBox(
+              //   height: 8,
+              // ),
+                            // const Text(
+              //   'Jawab pertanyaan berikut sesuai dengan keadaan kulit anda saat ini.',
+              //   style: TextStyle(
+              //     fontWeight: FontWeight.normal,
+              //     fontSize: AppFontSize.caption,
+              //     color: AppColors.neutral500,
+              //   ),
+              // ),
+              // const SizedBox(
+              //   height: 8,
+              // ),
+              // const Divider(
+              //   color: AppColors.neutral100,
+              // ),
+              // const SizedBox(
+              //   height: 8,
+              // ),
 
               // Radio Question 1
+              // const Text(
+              //   'Sela di jari tangan',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionOne,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'One',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionOne,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'One',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+
+              // const SizedBox(
+              //   height: 16,
+              // ),
+
+              // // Radio Question 2
+              // const Text(
+              //   'Pergelangan tangan depan',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionTwo,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Two',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionTwo,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Two',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+
+              // const SizedBox(
+              //   height: 16,
+              // ),
+
+              // // Radio Question 3
+              // const Text(
+              //   'Siku luar',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionThree,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Three',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionThree,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Three',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+
+              // const SizedBox(
+              //   height: 16,
+              // ),
+
+              // // Radio Question 4
+              // const Text(
+              //   'Lipat ketiak depan',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionFour,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Four',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionFour,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Four',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+
+              // const SizedBox(
+              //   height: 16,
+              // ),
+
+              // // Radio Question 5
+              // const Text(
+              //   'Pusar',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionFive,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Five',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionFive,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Five',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+
+              // const SizedBox(
+              //   height: 16,
+              // ),
+
+              // // Radio Question 6
+              // const Text(
+              //   'Area Bokong',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionSix,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Six',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionSix,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Six',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+
+              // const SizedBox(
+              //   height: 16,
+              // ),
+
+              // // Radio Question 7
+              // const Text(
+              //   'Area Puting',
+              //   style: TextStyle(
+              //     fontSize: AppFontSize.bodySmall,
+              //     fontWeight: FontWeight.bold,
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionSeven,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Seven',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: RadioListTile<String>(
+              //         title: const Text(
+              //           'Tidak Ada',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.normal,
+              //             fontSize: AppFontSize.bodySmall,
+              //             color: AppColors.black,
+              //           ),
+              //         ),
+              //         value: 'Tidak Ada',
+              //         groupValue: scannerProvider.sectionOneQuestionSeven,
+              //         onChanged: (value) {
+              //           scannerProvider.setAnswer(
+              //             'Section One',
+              //             'Seven',
+              //             value ?? '',
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
               const Text(
-                'Sela di jari tangan',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+                  'Data Kucing',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: AppFontSize.bodyMedium,
+                  ),
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionOne,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'One',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionOne,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'One',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(
-                height: 16,
-              ),
-
-              // Radio Question 2
-              const Text(
-                'Pergelangan tangan depan',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+                const SizedBox(
+                  height: 8,
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionTwo,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Two',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionTwo,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Two',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(
-                height: 16,
-              ),
-
-              // Radio Question 3
-              const Text(
-                'Siku luar',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+                const Divider(
+                  color: AppColors.neutral100,
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionThree,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Three',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionThree,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Three',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(
-                height: 16,
-              ),
-
-              // Radio Question 4
-              const Text(
-                'Lipat ketiak depan',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+                const SizedBox(
+                  height: 8,
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionFour,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Four',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionFour,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Four',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(
-                height: 16,
-              ),
-
-              // Radio Question 5
-              const Text(
-                'Pusar',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+                const Text(
+                  'Nama Kucing',
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionFive,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Five',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionFive,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Five',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(
-                height: 16,
-              ),
-
-              // Radio Question 6
-              const Text(
-                'Area Bokong',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+                const SizedBox(
+                  height: 8,
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionSix,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Six',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionSix,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Six',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(
-                height: 16,
-              ),
-
-              // Radio Question 7
-              const Text(
-                'Area Puting',
-                style: TextStyle(
-                  fontSize: AppFontSize.bodySmall,
-                  fontWeight: FontWeight.bold,
+               CustomTextFormField(
+                  textInputAction: TextInputAction.next,
+                  validator: (value) =>
+                      scannerProvider.validatePertanyaan(value, context),
+                  controller: scannerProvider.namaLengkapController,
+                  enable: true,
+                  maxLines: 1,
+                  hint: "Tambahkan nama Kucing anda",
                 ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Ada',
-                      groupValue: scannerProvider.sectionOneQuestionSeven,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Seven',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                  Flexible(
-                    child: RadioListTile<String>(
-                      title: const Text(
-                        'Tidak Ada',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: AppFontSize.bodySmall,
-                          color: AppColors.black,
-                        ),
-                      ),
-                      value: 'Tidak Ada',
-                      groupValue: scannerProvider.sectionOneQuestionSeven,
-                      onChanged: (value) {
-                        scannerProvider.setAnswer(
-                          'Section One',
-                          'Seven',
-                          value ?? '',
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
+                const SizedBox(
+                  height: 16,
+                ),
 
-              const SizedBox(
-                height: 16,
-              ),
-              ElevatedButton(
+               const Text(
+                  'Keluhan',
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                CustomTextFormField(
+                  textInputAction: TextInputAction.next,
+                  validator: (value) =>
+                      scannerProvider.validatePertanyaan(value, context),
+                  controller: scannerProvider.alamatController,
+                  enable: true,
+                  maxLines: 4,
+                  hint: "Tuliskan keluhan kucing anda",
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+
+              // ElevatedButton(
+              //     onPressed: () async {
+              //       if (scannerProvider.dataDiriFormKey.currentState!
+              //           .validate()) {
+              //         Navigator.of(context).push(
+              //           CupertinoPageRoute(
+              //             builder: (context) => const ReportSectionFourScreen(),
+              //           ),
+              //         );
+              //       }
+              //     },
+              //     style: ButtonStyle(
+              //       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              //         RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.circular(14.0),
+              //         ),
+              //       ),
+              //       backgroundColor: const MaterialStatePropertyAll(
+              //         Color.fromRGBO(158, 172, 252, 1),
+              //       ),
+              //     ),
+              //     child: const Text(
+              //     'Lanjut',
+              //     style: TextStyle(
+              //       fontSize: AppFontSize.bodyMedium,
+              //       fontWeight: FontWeight.normal,
+              //       color: AppColors.white,
+              //     ),
+              //   ),
+              // ),
+               ElevatedButton(
                 onPressed: () async {
-                  if (scannerProvider.validateSectionOne(context)) {
-                    Navigator.of(context).push(
-                      CupertinoPageRoute(
-                        builder: (context) => const ReportSectionTwoScreen(),
-                      ),
-                    );
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Row(
-                          children: [
-                            Icon(
-                              Icons.close_rounded,
-                              color: Colors.white,
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Flexible(
-                              child: Text(
-                                'Isi seluruh pertanyaan terlebih dahulu!',
-                              ),
-                            ),
-                          ],
-                        ),
-                        backgroundColor: AppColors.error500,
-                        behavior: SnackBarBehavior.floating,
-                      ),
-                    );
-                  }
+                  warningSubmitTest(context);
                 },
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -545,7 +597,7 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
                   ),
                 ),
                 child: const Text(
-                  'Lanjut',
+                  'Submit Test',
                   style: TextStyle(
                     fontSize: AppFontSize.bodyMedium,
                     fontWeight: FontWeight.normal,
@@ -560,3 +612,75 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
     );
   }
 }
+
+warningSubmitTest(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text(
+          'Submit Test',
+          style: TextStyle(
+            fontSize: AppFontSize.heading3,
+          ),
+        ),
+        content: const Text(
+          'Apakah Anda yakin semua data yang telah diinputkan telah benar? (Jika iya, klik Scan Kulit)',
+          style: TextStyle(
+            fontSize: AppFontSize.bodyMedium,
+          ),
+        ),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text(
+              'Cek Data Lagi',
+              style: TextStyle(color: AppColors.brandColor),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              // Tambahkan logika untuk menandai notifikasi sebagai sudah dibaca di sini
+              // Misalnya: markAllNotificationsAsRead();
+              Navigator.of(context).pop();
+
+              showCameraModal(context);
+            },
+            style: const ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll(
+                AppColors.brandColor,
+              ),
+            ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  IconlyLight.camera,
+                  size: 24,
+                  color: AppColors.white,
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                Flexible(
+                  child: Text(
+                    'Mulai Scan Kulit',
+                    style: TextStyle(
+                      fontSize: AppFontSize.bodyMedium,
+                      fontWeight: FontWeight.normal,
+                      color: AppColors.white,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+            ],
+          );
+        },
+      );
+  }
+
