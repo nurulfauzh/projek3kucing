@@ -32,17 +32,6 @@ class HeadingWidget extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(
-          width: 20,
-        ),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(30.0),
-          child: Container(
-            width: 60.0,
-            height: 60.0,
-            color: AppColors.primary500,
-          ),
-        ),
       ],
     );
   }

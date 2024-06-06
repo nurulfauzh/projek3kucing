@@ -4,13 +4,13 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello Word"}
+    return {"Halo": "Kelompok 5"}
 
 from fastapi import FastAPI,File,UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi. responses import JSONResponse
-from PIL import Image
+# from PIL import Image
 
 app = FastAPI()
 
@@ -24,10 +24,12 @@ app.add_middleware(
 
 @app.post('/upload')
 async def screening_test1(file: UploadFile = File(...)):
+    from PIL import Image
+    import io
     contents = file.file.read()
-    image = image.open(io.BytesIO(contents))
+    Image = Image.open(io.BytesIO(contents))
 
-    print(image)
+    print(Image)
 
-    return JSONResponse(contents={"status": "berhasil", "p": "p"}, status_code=2000)
+    return JSONResponse(content={"status": "berhasil", "p": "p"}, status_code=200)
 
